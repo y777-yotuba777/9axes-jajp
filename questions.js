@@ -1,365 +1,371 @@
-questions = 
-    [[//Federal-Unitary`
+const questions = 
+    [[// Federal-Unitary (連邦主義 vs 単一国家主義)
         [//4
-            "There is no need for a national government",
-            "Subdivisions of nations should have their own militaries",
-            "State laws should have precedence over national laws"
+            "中央政府など不要だ。",
+            "国家の構成体（州など）は独自の軍隊を持つべきだ。",
+            "州法は国法よりも優先されるべきだ。"
         ],
         [//3
-            "State and local laws should have precedence over national laws",
-            "The national government can't understand what the people need.",
-            "People should hold more loyalty to their local state than their country."
+            "州法や地方の条例は、国の法律よりも優先されるべきだ。",
+            "中央政府には、国民が何を必要としているのか理解できない。",
+            "人々は、国家よりも自分たちの地方（州）に対してより強い忠誠心を持つべきだ。"
         ],
         [//2
-            "Local governments should have more power than they currently do",
-            "Laws should vary from area to area and culture to culture within a country.",
-            "It's a good idea to test a policy in one state rather than implementing it nationwide right away"
-            
+            "地方政府は現在よりも多くの権限を持つべきだ。",
+            "国内であっても、地域や文化ごとに法律は異なるべきだ。",
+            "政策をすぐに全国で実施するのではなく、まず一つの州で試してみるのは良い考えだ。"
         ],
         [//1
-            "Local governments can understand their citizens better than the national government could",
-            "Local governments address issues that the national government would never touch without them",
-            "Local governments give each region good representation of their views"
+            "地方政府は、中央政府よりも自らの市民のことをよく理解できる。",
+            "地方政府は、中央政府が放置するような問題にも取り組んでいる。",
+            "地方政府は、各地域の考え方を適切に代表している。"
         ],
         [//-1
-            "A country cannot function without a national government",
-            "The national government protects minorities better than some local governments do.",
-            "There are many issues that it does not make sense to address at a local level"
+            "中央政府がなければ、国家は機能しない。",
+            "一部の地方政府よりも、中央政府の方がマイノリティをよりよく保護している。",
+            "地方レベルで対処しても意味のない問題は数多くある。"
         ],
         [//-2
-            "The national government needs more power",
-            "Subdivisions should not be able to exempt from national laws",
-            "People should think of themselves as citizens of their nation rather than their state"
+            "中央政府にはもっと権限が必要だ。",
+            "地方自治体が国の法律から除外されるべきではない。",
+            "人々は、自州の市民である前に、国家の市民であると考えるべきだ。"
         ],
         [//-3
-            "A group of states without a strong national government is merely an alliance, not a nation",
-            "A national government must be strong to adequately protect all its citizens",
-            "States cannot function without a strong national government"
+            "強力な中央政府のない州の集まりは、単なる同盟に過ぎず、国家とは呼べない。",
+            "すべての国民を十分に保護するためには、中央政府が強くなければならない。",
+            "強力な中央政府がなければ、各州は機能しない。"
         ],
         [//-4
-            "There is no need for local or state governments",
-            "Laws should be completely consistent within all regions of a nation",
-            "Strong states weaken a nation"
-        ]],[//Democratic-Authoritarian`
+            "地方や州の政府など不要だ。",
+            "国内のすべての地域で、法律は完全に統一されるべきだ。",
+            "強力な州は、国家を弱体化させる。"
+        ]],
+        [// Democratic-Authoritarian (民主主義 vs 権威主義)
         [//4
-            "Direct democracy is the best form of government",
-            "People should vote issue by issue themselves",
-            "Representatives rarely represent the nation well"
+            "直接民主制が最良の統治形態だ。",
+            "人々は、問題ごとに自ら投票して決めるべきだ。",
+            "代表者（議員）が国をうまく代表していることは稀だ。"
         ],
         [//3
-            "It is important that the government follows the majority opinion, even if it is wrong.",
-            "The more people asked, the better chance there is of reaching the best decision.",
-            "Nobody but me can adequately represent my views"
+            "たとえ間違っていたとしても、政府が多数派の意見に従うことは重要だ。",
+            "より多くの人々に意見を求めるほど、最良の決定に到達する可能性が高まる。",
+            "私自身の考えを十分に代表できるのは、私をおいて他にいない。"
         ],
         [//2
-            "Elections are an effective way of showing government approval",
-            "Democracy is the worst form of government, except for all the others we've tried.",
-            "Each person should have one vote, each equal to every other"
+            "選挙は、政府への支持を示す効果的な方法だ。",
+            "民主主義は、これまで試されてきた他のすべての制度を除けば、最悪の統治形態だ。",
+            "誰もが一票を持ち、それぞれの票は完全に平等であるべきだ。"
         ],
         [//1
-            "Democracy is more than a decision-making process.",
-            "People should have the power to choose their leaders",
-            "The government must be by the people for the people"
+            "民主主義は単なる意思決定プロセス以上のものだ。",
+            "人々は、自らの指導者を選ぶ権限を持つべきだ。",
+            "政府は人民による人民のためのものでなければならない。"
         ],
         [//-1
-            "The stronger the leadership, the better.",
-            "Popular opinion is not always right",
-            "Leaders must be strong or a nation will suffer"
+            "指導力は強力であればあるほど良い。",
+            "世論が常に正しいとは限らない。",
+            "指導者が強くなければ、国家は苦しむことになる。"
         ],
         [//-2
-             "A hierarchical state is best.",
-            "Society could not function without leaders and followers",
-             "Democracy makes it too easy for a majority to further itself at the expense of minorities"
+            "階層的な国家が最良だ。",
+            "指導者と従者がいなければ、社会は機能しない。",
+            "民主主義は、多数派がマイノリティを犠牲にして自分たちの利益を追求することを容易にしすぎる。"
         ],
         [//-3
-            "The general populace makes poor decisions.",
-             "It is important that we further my group's goals above all others.",
-            "Public opinion swings too much with emotional events to be useful for policy making"
+            "一般大衆は愚かな決定を下す。",
+            "私たちは、何よりも自分たちの集団の目標を推進することが重要だ。",
+            "世論は感情的な出来事によって大きく揺れ動くため、政策立案には役立たない。"
         ],
         [//-4
-            "Elections are a waste of resources",
-            "Catering to popular opinion is detrimental to a nation",
-            "A nation must obey its leadership without question"
-        ]],[//Globalist-Isolationist
+            "選挙は資源の無駄だ。",
+            "世論に迎合することは、国家にとって有害だ。",
+            "国家は、疑問を持たずに指導者に従わなければならない。"
+        ]],
+        [// Globalist-Isolationist (国際主義 vs 孤立主義)
         [//4
-            "A united world government would be beneficial to mankind.",
-            "We are first and foremost citizens of Earth",
-            "In order for humanity to survive, we must get past having separate nations"
+            "統一された世界政府は、人類にとって有益だろう。",
+            "私たちは何よりもまず、地球の市民だ。",
+            "人類が生き残るためには、別々の国家を持つという段階を乗り越えなければならない。"
         ],
         [//3
-            "The United Nations needs more power",
-            "The United Nations should have a military to enforce its resolutions",
-            "Having independent nations with the risk of global conflict creates a large threat to humanity as a whole"
+            "国際連合にはもっと権限が必要だ。",
+            "国連は、その決議を執行するための軍隊を持つべきだ。",
+            "世界的な紛争のリスクを抱えた独立国家が存在することは、人類全体に対する大きな脅威となる。"
         ],
         [//2
-            "I support regional unions, such as the European Union.",
-            "Governments should be accountable to the international community.",
-            "Nations fighting among each other gets in the way of progress"
+            "私は欧州連合（EU）のような地域連合を支持する。",
+            "政府は国際社会に対して説明責任を負うべきだ。",
+            "国家同士が争うことは、進歩の妨げになる。"
         ],
         [//1
-            "International trade is generally beneficial.",
-            "Alliances are important for protecting a nation",
-            "Nations should cooperate whenever it benefits them both"
+            "国際貿易は一般的に有益だ。",
+            "同盟は、国家を守るために重要だ。",
+            "国家同士は、双方に利益がある場合はいつでも協力すべきだ。"
         ],
         [//-1
-            "It is important to maintain our national sovereignty.",
-            "My nation is closer to my views than most nations in the world",
-            "I am proud to be in my country"
+            "国家の主権を維持することは重要だ。",
+            "世界の他の国々に比べて、私の国の方が私の考えに近い。",
+            "私は自分の国の一員であることを誇りに思う。"
         ],
         [//-2
-            "International aid is a waste of money.",
-            "Alliances can pose a threat to a nation's sovereignty.",
-            "National cultures are important to protect"
+            "国際援助は金の無駄だ。",
+            "同盟は、国家の主権に対する脅威となり得る。",
+            "国家の文化は保護すべき重要なものだ。"
         ],
         [//-3
-            "My nation should stay out of international affairs",
-            "The United Nations should be abolished.",
-            "Nobody in other countries has our best interests in mind"
+            "私の国は国際問題に干渉すべきではない。",
+            "国際連合は廃止されるべきだ。",
+            "他国の誰も、私たちの最善の利益など考えていない。"
         ],
         [//-4
-            "Diplomacy only hurts nations",
-            "There should not be international law",
-            "Any deals other countries want must be bad for us"
-        ]],[//Militarist-Pacifist
+            "外交は国家を傷つけるだけだ。",
+            "国際法など存在すべきではない。",
+            "他国が望むいかなる取引も、我々にとって不利益なはずだ。"
+        ]],
+        [// Militarist-Pacifist (軍国主義 vs 平和主義)
         [//4
-            "War is needed to make an economy thrive",
-            "A constant state of war benefits a country",
-            "Only those who serve in the military should be allowed to have influence on who is in power"
+            "経済を繁栄させるためには戦争が必要だ。",
+            "継続的な戦争状態は、国家にとって利益となる。",
+            "軍に勤務する者だけが、権力者に影響を与えることを許されるべきだ。"
         ],
         [//3
-            "There should be compulsory military service",
-            "Countries that do not serve our interests should be toppled",
-            "Only those who served in the military should be able to gain power in government"
+            "徴兵制を導入すべきだ。",
+            "我々の利益に貢献しない国は打倒されるべきだ。",
+            "軍務を経験した者だけが、政府で権力を握る資格を持つべきだ。"
         ],
         [//2
-            "Military action by our nation is often necessary to protect it.",
-            "Countries that violate human rights should be toppled",
-            "A military option should always be considered"
+            "我が国による軍事行動は、国家を守るために必要となることが多い。",
+            "人権を侵害する国々は打倒されるべきだ。",
+            "軍事オプションは常に検討されるべきだ。"
         ],
         [//1
-            "A government must maintain a strong military to defend itself",
-            "A nation usually needs a military in order to survive",
-            "We should respect those who have served in our military"
+            "政府は自国を守るために強力な軍隊を維持しなければならない。",
+            "国家が存続するためには、通常、軍隊が必要だ。",
+            "我々は、軍務に就いた者たちを尊敬すべきだ。"
         ],
         [//-1
-            "It is more important to retain peaceful relations than to further our strength.",
-            "Diplomatic options should always be tried before war is even considered",
-            "Peace is preferable to war whenever possible"
+            "国力を増強するよりも、平和的な関係を維持する方が重要だ。",
+            "戦争が検討される前に、常に外交的オプションを試みるべきだ。",
+            "可能な限りいつでも、戦争よりも平和が望ましい。"
         ],
         [//-2
-            "Even when protesting an authoritarian government, violence is not acceptable.",
-            "Lasting peace leads to prosperity",
-            "War usually leads to worse outcomes"
+            "権威主義的な政府に抗議する場合であっても、暴力は容認されない。",
+            "永続的な平和は繁栄をもたらす。",
+            "戦争は通常、より悪い結果をもたらす。"
         ],
         [//-3
-            "Military spending is a waste of money.",
-            "We have no right to militarily intervene in other nations",
-            "Countries fall apart with constant war"
+            "軍事費は金の無駄だ。",
+            "我々には、他国に軍事的に介入する権利などない。",
+            "国家は継続的な戦争によって崩壊する。"
         ],
         [//-4
-            "War is never justified",
-            "In the modern era, militaries aren't really necessary",
-            "Nations should not maintain a military"
-        ]],[//Security-Freedom
+            "いかなる戦争も正当化されない。",
+            "現代において、軍隊はもはやそれほど必要ではない。",
+            "国家は軍隊を維持すべきではない。"
+        ]],
+        [// Security-Freedom (治安重視 vs 自由重視)
         [//4
-            "Those who disagree with the government should be removed from the country",
-            "The government should monitor all citizens to combat terrorism",
-            "People should not have protections that could hinder discovering their criminal activity"
+            "政府に反対する者は、国外へ追放されるべきだ。",
+            "テロと戦うため、政府はすべての市民を監視すべきだ。",
+            "犯罪行為の発見を妨げるような保護は、人々に与えられるべきではない。"
         ],
         [//3
-            "Police need more power and protection",
-            "It is very important to maintain law and order.",
-            "A country must be sure to take all measures to enforce its laws"
+            "警察にはもっと権限と保護が必要だ。",
+            "法と秩序を維持することは非常に重要だ。",
+            "国家は、法律を執行するためにあらゆる措置を確実に講じなければならない。"
         ],
         [//2
-            "If you have nothing to hide, then you shouldn't care about the government having access to your communications",
-            "The sacrifice of some civil liberties is necessary to protect us from acts of terrorism.",
-            "Government surveillance is necessary in the modern world."
+            "隠し事がないのなら、政府があなたの通信にアクセスすることを気にすべきではない。",
+            "テロ行為から私たちを守るためには、いくつかの市民的自由の犠牲もやむを得ない。",
+            "現代の世界において、政府による監視は必要だ。"
         ],
         [//1
-            "The government should have access to the emails of suspected terrorists",
-            "Some freedom must be given up in order to keep people safe",
-            "Absolute freedom makes a society dangerous"
+            "政府は、テロ容疑者の電子メールにアクセスする権限を持つべきだ。",
+            "人々の安全を守るためには、ある程度の自由を手放さなければならない。",
+            "絶対的な自由は、社会を危険なものにする。"
         ],
         [//-1
-            "Marijuana should be legalized",
-            "People should be given freedom whenever it causes little security risk",
-            "The government has no business looking into most people's personal lives"
+            "マリファナは合法化されるべきだ。",
+            "治安へのリスクが少ない場合は、いつでも人々に自由が与えられるべきだ。",
+            "政府は、大半の人々の私生活に干渉すべきではない。"
         ],
         [//-2
-            "Abortion should be legal in all cases",
-            "Police should be regulated more",
-            "No authority should be left unquestioned."
+            "中絶はあらゆるケースにおいて合法とされるべきだ。",
+            "警察はもっと規制されるべきだ。",
+            "いかなる権威も、疑問視されずに放置されるべきではない。"
         ],
         [//-3
-            "Victimless crimes (such as drug use) should not be crimes at all.",
-            "Most drugs should be legalized",
-            "Whistleblowers should be strongly protected"
+            "被害者のいない犯罪（薬物使用など）は、そもそも犯罪とされるべきではない。",
+            "ほとんどの薬物は合法化されるべきだ。",
+            "内部告発者は強力に保護されるべきだ。"
         ],
         [//-4
-            "The very existence of the state is a threat to our liberty.",
-            "There should be no police force",
-            "People's freedom should have no limits"
-        ]],[//Equality-Markets`
+            "国家の存在そのものが、我々の自由に対する脅威だ。",
+            "警察組織など存在すべきではない。",
+            "人々の自由に制限があってはならない。"
+        ]],
+        [// Equality-Markets (平等主義 vs 市場主義)
         [//4
-            "Communism, if implemented correctly, would be a good form of economics",
-            "From each according to his ability, to each according to his need",
-            "Equality of outcome is important"
+            "共産主義は、正しく実施されれば優れた経済体制となるだろう。",
+            "能力に応じて働き、必要に応じて受け取る。",
+            "結果の平等は重要だ。"
         ],
         [//3
-            "Oppression by corporations is more of a concern than oppression by governments.",
-            "Taxes should be increased on the rich to provide for the poor.",
-            "Public utilities like roads and electricity should be publicly owned."
+            "企業による抑圧は、政府による抑圧よりも懸念されるべきだ。",
+            "貧しい人々を救済するため、富裕層への税金を増やすべきだ。",
+            "道路や電気などの公共サービスは公有とすべきだ。"
         ],
         [//2
-            "I support single-payer, universal healthcare.",
-            "The wealthy have far more than they need",
-            "Basic things needed to live, such as healthcare, are rights"
+            "単一支払者制度による国民皆保険を支持する。",
+            "富裕層は、必要とするものを遥かに超えて持っている。",
+            "医療など、生きるために必要な基本的なものは権利だ。"
         ],
         [//1
-            "It is necessary for the government to intervene in the economy to protect consumers.",
-            "People should have equal opportunity to succeed",
-            "People born to wealthy families have unfair success even when they aren't skilled and don't work hard"
+            "消費者を保護するため、政府が経済に介入することは必要だ。",
+            "人々は成功するための平等な機会を持つべきだ。",
+            "裕福な家庭に生まれた人々は、スキルがなく勤勉でなくても不公平に成功してしまう。"
         ],
         [//-1
-            "People should have the right to leave their wealth to their descendents",
-            "Excessive government intervention is a threat to the economy.",
-            "Economies without any capitalism will collapse"
+            "人々は、自らの財産を子孫に引き継ぐ権利を持つべきだ。",
+            "過度な政府の介入は、経済に対する脅威だ。",
+            "資本主義を一切含まない経済は崩壊する。"
         ],
         [//-2
-            "It is better to maintain a balanced budget than to ensure welfare for all citizens.",
-            "Capitalism is better than any existing alternative",
-            "Government owned industry is usually a bad idea"
+            "全国民の福祉を保障するよりも、均衡財政を維持する方が良い。",
+            "資本主義は、現在存在するいかなる代替案よりも優れている。",
+            "国営産業は通常、悪い考えだ。"
         ],
         [//-3
-            "The freer the market, the freer the people",
-            "People should have to work for anything they get",
-            "The poor choose to be poor"
+            "市場が自由であるほど、人々も自由になる。",
+            "人々は、得るものすべてに対して働かなければならない。",
+            "貧しい人々は、自ら貧しさを選んでいるのだ。"
         ],
         [//-4
-            "The government should not regulate the economy at all",
-            "The government should not break up monopolies",
-            "Those who do not work should die"
-        ]],[//Secular-Religious
+            "政府は経済に一切規制をかけるべきではない。",
+            "政府は独占を解体すべきではない。",
+            "働かない者は死ぬべきだ。"
+        ]],
+        [// Secular-Religious (世俗主義 vs 宗教重視)
         [//4
-            "Religion should be banned",
-            "Faith is complete nonsense",
-            "Religion must decline for society to progress"
+            "宗教は禁止されるべきだ。",
+            "信仰など全くのナンセンスだ。",
+            "社会が進歩するためには、宗教は衰退しなければならない。"
         ],
         [//3
-            "Religious clothing should be banned from public",
-            "There is no higher power",
-            "The government should not fund any religious organizations in any way"
+            "公の場での宗教的服装は禁止されるべきだ。",
+            "神や超越的な存在などいない。",
+            "政府はいかなる方法でも、宗教組織に資金を提供すべきではない。"
         ],
         [//2
-            "I support gay marriage",
-            "Every religion must be looked upon equally by the government",
-            "Religion should be removed from everything in our government"
+            "私は同性婚を支持する。",
+            "政府は、すべての宗教を平等に扱わなければならない。",
+            "政府のあらゆる事柄から宗教を排除すべきだ。"
         ],
         [//1
-            "Religion does not belong in government",
-            "Laws should not be based on religion",
-            "There must be a separation between church and state"
+            "宗教は政府に関わるべきではない。",
+            "法律は宗教に基づくべきではない。",
+            "政教分離がなされなければならない。"
         ],
         [//-1
-            "I believe there is something after death",
-            "Religion is beneficial for society",
-            "People must be allowed to follow a religion"
+            "死後の世界に何かがあると信じている。",
+            "宗教は社会にとって有益だ。",
+            "人々は宗教を信仰することを許されなければならない。"
         ],
         [//-2
-            "I believe in a higher power",
-            "Religious organizations often provide better assistance to the poor than the government does",
-            "Children should be educated in religious values."
+            "私は神や超越的な存在を信じている。",
+            "宗教組織は、政府よりも貧しい人々に対してより良い支援を提供することが多い。",
+            "子どもたちは宗教的価値観に基づいて教育されるべきだ。"
         ],
         [//-3
-            "Religion usually provides the truth",
-            "My religious values should be spread as much as possible.",
-            "Sex outside marriage is immoral."
+            "宗教は通常、真実を提供する。",
+            "私の宗教的価値観は、可能な限り広く布教されるべきだ。",
+            "婚外交渉は不道徳だ。"
         ],
         [//-4
-            "Theocracy is a good system of government",
-            "The government should support and only recognize one religion",
-            "Most bad things happening in the world are caused by us turning away from religion"
-        ]],[//Progressive-Traditional
+            "神権政治は優れた統治システムだ。",
+            "政府は一つの宗教だけを支持し、公認すべきだ。",
+            "世界で起きている大半の悪い出来事は、私たちが宗教から離れてしまったことに起因する。"
+        ]],
+        [// Progressive-Traditional (進歩主義 vs 伝統主義)
         [//4
-            "If AI could rule more effectively than humans, then AI should rule",
-            "Genetic modification is a force for good, even on humans.",
-            "Tradition just hinders the progress of technology"
+            "もしAIが人間よりも効果的に統治できるなら、AIが統治すべきだ。",
+            "遺伝子組み換えは、人間に対してであっても、良い力となる。",
+            "伝統はただ技術の進歩を妨げるだけだ。"
         ],
         [//3
-            "Automation overall is extremely good for society",
-            "Traditions are of no value on their own.",
-            "When people have already suffered for technology to be developed, we should use that technology"
+            "自動化は全体として、社会にとって極めて良いことだ。",
+            "伝統は、それ自体には何の価値もない。",
+            "技術の開発のためにすでに人々が犠牲を払ってきたのだから、その技術は活用すべきだ。"
         ],
         [//2
-            "We should put effort into getting a person on Mars in the near future",
-            "Testing products on animals is ethical",
-            "Technological progress is usually good"
-            
+            "近い将来に人類を火星に送るために、力を注ぐべきだ。",
+            "動物を使った製品テストは倫理的だ。",
+            "技術の進歩は通常、良いことだ。"
         ],
         [//1
-            "Human Caused climate change is currently one of the greatest threats to our way of life.",
-            "Environmental regulations are essential.",
-            "A better world will come from automation, science, and technology."
+            "人為的な気候変動は、現在、私たちの生活様式に対する最大の脅威の一つだ。",
+            "環境規制は不可欠だ。",
+            "自動化、科学、技術によって、より良い世界がもたらされるだろう。"
         ],
         [//-1
-            "To chase progress at all costs is dangerous.",
-            "Technology is not always beneficial",
-            "Traditions are important"
+            "代償を顧みずに進歩を追い求めることは危険だ。",
+            "技術が常に有益とは限らない。",
+            "伝統は重要だ。"
         ],
         [//-2
-            "Technology is negatively affecting modern society",
-            "Genetic modification should be used rarely, if ever",
-            "Maintaining family values is essential."
+            "技術は現代社会に悪影響を及ぼしている。",
+            "遺伝子組み換えは、使うとしてもごく稀にすべきだ。",
+            "家族的価値観を維持することは不可欠だ。"
         ],
         [//-3
-            "Society was better many years ago than it is now.",
-            "It is important that we maintain the traditions of our past.",
-            "The elders in society know the best path for it"
+            "社会は現在よりも何年も前の方が良かった。",
+            "私たちが過去の伝統を維持することは重要だ。",
+            "社会における長老たちは、その社会にとって最良の道を知っている。"
         ],
         [//-4
-            "Traditional medicines are often more effective than modern medicines",
-            "The Internet should be banned",
-            "We must go back to a basic way of life without modern conveniences."
-        ]],[//Assimilationist-Multiculturalist
+            "伝統医療は、現代医療よりも効果的であることが多い。",
+            "インターネットは禁止されるべきだ。",
+            "私たちは、現代の便利さのない基本的な生活様式に戻るべきだ。"
+        ]],
+        [// Assimilationist-Multiculturalist (同化主義 vs 多文化主義)
         [//4
-            "Foreigners should never enter the country",
-            "We should not allow any refugees",
-            "Only our national language(s) should be spoken in our country"
+            "外国人は決して国内に入るべきではない。",
+            "難民は一切受け入れるべきではない。",
+            "我が国では、公用語のみが話されるべきだ。"
         ],
         [//3
-            "Only extremely talented immigrants, if that, should be permitted to enter the country",
-            "If we accept migrants at all, it is important that they assimilate into our culture.",
-            "Immigrants can never really adapt to our way of life"
+            "極めて優秀な移民のみを、あるいはそれすらも、入国を許可すべきだ。",
+            "もし移民を受け入れるとしても、彼らが我々の文化に同化することは重要だ。",
+            "移民は決して我々の生活様式に本当の意味で適応できない。"
         ],
         [//2
-            "In general, immigrants are bad for the country",
-            "A nation's culture is important to protect",
-            "Illegal immigrants do not provide a benefit to the hosting country"
+            "一般的に、移民は国家にとって悪影響だ。",
+            "国家の文化は保護されるべき重要なものだ。",
+            "不法移民は、受け入れ国に利益をもたらさない。"
         ],
         [//1
-            "Illegal immigrants should be deported in most or all cases",
-            "Immigrants should be expected to learn the language of the country",
-            "Border protection is important"
+            "不法移民は、大半またはすべてのケースにおいて国外退去させられるべきだ。",
+            "移民は、その国の言語を学ぶことを期待されるべきだ。",
+            "国境警備は重要だ。"
         ],
         [//-1
-            "We should be taking in more refugees",
-            "Immigrants are a net positive",
-            "I enjoy some foreign cultures"
+            "もっと多くの難民を受け入れるべきだ。",
+            "移民は純粋なプラス（利益）だ。",
+            "私は他国のいくつかの文化を楽しんでいる。"
         ],
         [//-2
-            "No cultures are superior to others.",
-            "We should be more accepting to other cultures",
-            "All societies are a blend of cultures"
+            "いかなる文化も、他の文化より優れているということはない。",
+            "私たちは他国の文化をもっと受け入れるべきだ。",
+            "すべての社会は、多様な文化の融合体だ。"
         ],
         [//-3
-            "Everybody should speak at least two languages",
-            "All humans share a common identity",
-            "Our culture would be better with other cultures mixed in more"
+            "誰もが少なくとも2つの言語を話せるようになるべきだ。",
+            "すべての人間は共通のアイデンティティを共有している。",
+            "私たちの文化は、他の文化がもっと混ざり合うことでより良くなるだろう。"
         ],
         [//-4
-            "Governments should be as concerned about foreign citizens as they are about those within their borders.",
-            "Anybody who wants to enter the country should be able to",
-            "The benefits of open borders would outweigh the costs"
-        ]
-    ]];
+            "政府は、自国民と同じように外国の市民についても懸念すべきだ。",
+            "入国を望む者は誰でも入国できるべきだ。",
+            "国境開放による利益は、そのコストを上回るだろう。"
+        ]]
+    ];
